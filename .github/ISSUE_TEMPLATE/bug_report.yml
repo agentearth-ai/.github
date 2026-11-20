@@ -1,0 +1,52 @@
+name: Bug report / 问题反馈
+description: Something isn't working as expected / 功能不符合预期
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! **Never paste your API key, tokens, or personal data** — redact them from logs and screenshots.
+        感谢反馈！**请勿粘贴 API Key、Token 或个人信息**，日志和截图中请先打码。
+
+        Security issue? Don't file it here — see our [security policy](https://github.com/agentearth-ai/.github/blob/main/SECURITY.md).
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened? / 问题描述
+      description: A clear description of the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / 期望结果
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / 版本
+      description: Version of the plugin, CLI, or SDK you're using.
+      placeholder: e.g. 1.2.3
+  - type: input
+    id: environment
+    attributes:
+      label: Environment / 运行环境
+      description: Agent client and version, OS, runtime.
+      placeholder: e.g. WorkBuddy 5.11.3 on Windows 11
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / 日志
+      description: Relevant logs or error messages (secrets removed). This will be rendered as code.
+      render: shell

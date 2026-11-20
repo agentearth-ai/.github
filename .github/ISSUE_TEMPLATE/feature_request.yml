@@ -1,0 +1,28 @@
+name: Feature request / 功能建议
+description: Suggest an idea or improvement / 提出新想法或改进
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve? / 你想解决什么问题？
+      description: Describe the use case. Why do you need this?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution / 建议的方案
+      description: What would you like to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered / 考虑过的其他方案
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution / 参与贡献
+      options:
+        - label: I'm willing to submit a pull request for this. / 我愿意为此提交 PR。

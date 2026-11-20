@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability / 报告安全漏洞
+    url: https://github.com/agentearth-ai/.github/blob/main/SECURITY.md
+    about: Please report security issues privately, not as public issues. / 请私下报告，不要公开提 Issue。
+  - name: Account, billing & product questions / 账号、计费与产品问题
+    url: https://agentearth.ai
+    about: For questions about your AgentEarth account, visit the website or email contact@agentearth.ai.
